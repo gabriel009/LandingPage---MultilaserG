@@ -2,6 +2,10 @@ body{
   color: #2A1734;
 }
 
+.white{
+  color: #fff;
+}
+
 /* mainStyles */
 .fontTitle{
   font-size: 48px;
@@ -149,10 +153,6 @@ body{
   padding-bottom: 32px;
 }
 
-.white{
-  color: #fff;
-}
-
 .background-purple{
   background: #462970;
   z-index: -10;
@@ -160,4 +160,90 @@ body{
   width: 100%;
   margin-top: -420px;
   overflow: hidden;
+}
+
+.finalPhoneContainer{
+  height: 980px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px){
+  .containerBegin{
+    background: #462970;
+    width: 100%;
+  }
+  .containerBegin div img{
+    max-width: 600px;
+    overflow: hidden;
+    height: auto;
+  }
+  .finalPhoneContainer img{
+    max-width: 600px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .mainImage{
+    margin-top: 96px; 
+  }
+
+  .containerTitle{
+    width: 90%;
+  }
+
+  .containerContent{
+    width: 768px;
+  }
+
+  .containerInfo div img{
+    max-width: 600px;
+    overflow: hidden;
+    height: auto;
+    margin-left: -200px;
+  }
+
+  .fontTitle{
+    font-size: 42px;
+  }
+
+  .fontInfo{
+    font-size: 36px;
+  }
+
+  .fontInfoAlt{
+    font-size: 36px;
+  }
+  
+  .containerBoxInfoSize{
+    margin-left: 20px;
+  }
+
+  /* second */
+  .containerContentSecond{
+    width: 768px;
+  }
+
+  .textBehind{
+    display: none;
+  }
+
+  .phoneBackBox{
+    max-width: 600px;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .background-purple{
+    height: 320px;
+    margin-top: -320px;
+  }
+
+  .white{
+    color: #fff;
+  }
 }
