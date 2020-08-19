@@ -1,0 +1,163 @@
+body{
+  color: #2A1734;
+}
+
+/* mainStyles */
+.fontTitle{
+  font-size: 48px;
+}
+
+.fontInfo{
+  font-size: 96px;
+}
+
+.fontInfoAlt{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.fontInfoAltMin{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fontIcon{
+  size: 14;
+  font-weight: bold;
+  color: #362252;
+}
+
+.containerBegin {
+  background: #462970;
+  height: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerPhone{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 24px 0 32px 0;
+}
+
+.headerPhone h1{
+  color: rgba(255, 255, 255, 0.5);
+  size: 12px;
+  margin-top: 6px;
+}
+
+.mainImage{
+  height: 100vmax;
+}
+
+/* Container - 1 */
+
+.containerContent{
+  width: 1280px;
+  height: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerTitle{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.textBehind{
+  position: absolute;
+
+  font-weight: bold;
+  font-size: 182px;
+  overflow: hidden;
+  z-index: -10;
+  color: rgba(70, 41, 112, 0.05);
+}
+
+.containerTitle h3{
+  margin-right: 96px;
+}
+
+.containerInfo{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Box */
+
+.containerBoxInfoSize{
+  margin-left: 128px;
+  padding-top: 26px;
+}
+
+.BoxIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 36px;
+  width: 100px;
+  height: 86px;
+}
+
+.BoxInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+/* Second */
+
+.containerContentSecond{
+  width: 1280px;
+  height: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerSecondTitle{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+
+}
+
+.containerSecondDetail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.alignInfoPhone{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 76px;
+  padding-bottom: 32px;
+}
+
+.white{
+  color: #fff;
+}
+
+.background-purple{
+  background: #462970;
+  z-index: -10;
+  height: 420px;
+  width: 100%;
+  margin-top: -420px;
+  overflow: hidden;
+}
