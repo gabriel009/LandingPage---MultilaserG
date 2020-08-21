@@ -6,11 +6,401 @@
   <title>Smartphone - Multilaser G</title>
 
   <!-- Reset -->
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <style>
+    a {
+        text-decoration: none;
+    }
+
+    html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+    }
+    body {
+        background: #F0F1F5;
+        font-family: 'Manrope', sans-serif;
+    }
+  </style>
 
   <!-- Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
+  <style>
+    body{
+      color: #2A1734;
+    }
+
+    .white{
+      color: #fff;
+    }
+
+    .fontTitle{
+      font-size: 48px;
+    }
+
+    .fontInfo{
+      font-size: 96px;
+    }
+
+    .fontInfoAlt{
+      font-size: 64px;
+      font-weight: bold;
+    }
+
+    .fontInfoAltMin{
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .fontIcon{
+      font-weight: bold;
+    }
+
+    .phoneImgStyle{
+      display: block;
+    }
+
+    .containerBegin {
+      background: #462970;
+      height: 980px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .headerPhone{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 24px 0 32px 0;
+    }
+
+    .headerPhone h1{
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      margin-top: 6px;
+      font-weight: normal;
+    }
+
+    .mainImage{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .containerContent{
+      max-width: 1280px;
+      height: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .containerTitle{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-bottom: 20px;
+    }
+
+    .textBehind{
+      position: absolute;
+      font-weight: bold;
+      font-size: 162px;
+      overflow: hidden;
+      z-index: -10;
+      color: rgba(70, 41, 112, 0.05);
+    }
+
+    .containerTitle h3{
+      margin-right: 96px;
+    }
+
+    .containerInfo{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .containerBoxInfoSize{
+      width: 100%;
+      margin-left: 128px;
+      padding-top: 26px;
+    }
+
+    .BoxIcon{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 36px;
+      width: 100px;
+      height: 86px;
+    }
+
+    .BoxInfo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 36px;
+    }
+
+    .containerContentSecond{
+      max-width: 1280px;
+      height: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .containerSecondTitle{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .containerSecondDetail{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .alignInfoPhone{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 76px;
+      padding-bottom: 32px;
+    }
+
+    .alignInfoPhone .phoneBackHidden{
+      display: none;
+    }
+
+    .background-purple{
+      background: #462970;
+      z-index: -10;
+      height: 420px;
+      width: 100%;
+      margin-top: -420px;
+      overflow: hidden;
+    }
+
+    .finalPhoneContainer{
+      height: 980px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .finalPhoneContainer {
+      width: 100%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .finalPhoneContainer img{
+      max-width: 100%;
+    } 
+
+  </style>
+
+  <!-- Responsive -->
+  <style>
+    /* responsiveDesktop */
+    @media (max-width: 1280px){
+      .containerContent,
+      .containerContentSecond{
+        padding: 0 36px;
+      }
+
+      .containerTitle{
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0px;
+      }
+
+      .containerBoxInfoSize{
+        margin-left: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .containerTitle .fontTitle{
+        margin-right: 0px;
+      }
+
+      .fontTitle{
+        font-size: 36px;
+      }
+
+      .textBehind{
+        font-size: 12vw;
+      }
+
+      .fontInfo{
+        font-size: 6vw;
+      }
+
+      .fontInfoAlt{
+        font-size: 5vw;
+      }
+
+      .background-purple{
+        height: 328px;
+        margin-top: -328px;
+      }
+
+      .boxPurpleInfo{
+        margin: 36px 0 16px 0;
+      }
+      
+      .boxPurpleInfo .BoxInfo{
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 980px){
+      .mainImage img{
+        width: 100%;
+      }
+      .containerContent,
+      .containerContentSecond{
+        padding: 0 24px;
+      }
+      .phoneBackBox{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      .fontInfoAlt{
+        font-size: 5vw;
+      }
+
+      .phoneImgStyle{
+        width: 90%;
+        height: auto;
+      }
+
+      .boxPurpleInfo{
+        margin: 16px 0 16px 0;
+      }
+
+      .boxPurpleInfo .BoxInfo .fontInfo{
+        margin-bottom: 0px;
+        font-size: 5vw;
+      }
+    }
+
+    @media only screen and (max-width: 767px){
+      .containerBegin,
+      .finalPhoneContainer{
+        height: 900px;
+      }
+
+      .containerContentSecond .textBehind{
+        margin-bottom: -120px;    
+      }
+      .alignInfoPhone{
+        padding-top: 32px;
+      }
+
+      .headerPhone{
+        margin: 36px 0 64px 0;
+      }
+
+      .headerPhone h1{
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      .containerContent,
+      .containerContentSecond{
+        height: 100%;
+      }
+
+      .containerInfo{
+        flex-direction: column-reverse;
+      }
+
+      .containerBoxInfoSize{
+        margin-left: 0px
+      }
+
+      .infoSecurity{
+        margin-bottom: 36px 0 24px 0;
+      }
+
+      .infoSecurity div{
+        margin-bottom: 12px;
+      }
+
+      .containerTitle{
+        margin: 24px 0px;
+      }
+
+      .BoxInfo{
+        margin-bottom: 24px;
+      }
+
+      .fontInfo,
+      .fontInfoAlt{
+        font-size: 10vw;
+      }
+
+      .fontIcon{
+        font-size: 4vw;
+      }
+
+      .BoxIcon{
+        margin-right: 12px;
+      }
+
+      .phoneImgStyle{
+        width: 100%;
+      }
+
+      .containerSecondDetail{
+        flex-direction: column;
+      }
+
+      .containerSecondTitle{
+        margin-top: 42px;
+      }
+
+      .phoneBackBox .phoneBackHidenMobile{
+        display: none;
+      }
+
+      .alignInfoPhone .phoneBackHidden{
+        display: block;
+      }
+
+      .background-purple{
+        position: relative;
+        margin: 0px;
+        height: 220px;
+        margin-top: -276px;
+      }
+
+      @media only screen and (max-width: 542px){
+        .containerBegin,
+        .finalPhoneContainer{
+          height: 650px;
+        }
+      }
+    }
+  </style>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon1.ico" type="image/x-icon">
