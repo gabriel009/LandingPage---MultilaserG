@@ -26,10 +26,18 @@ body{
 }
 
 .fontIcon{
-  size: 14;
   font-weight: bold;
-  color: #362252;
 }
+
+.phoneImgStyle{
+  display: block;
+}
+
+/* .testContainer{
+  height: 100%;
+  display: flex;
+  align-items: center;
+} */
 
 .containerBegin {
   background: #462970;
@@ -49,18 +57,24 @@ body{
 
 .headerPhone h1{
   color: rgba(255, 255, 255, 0.5);
-  size: 12px;
+  font-size: 18px;
   margin-top: 6px;
+  font-weight: normal;
 }
 
 .mainImage{
-  height: 100vmax;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Container - 1 */
 
 .containerContent{
-  width: 1280px;
+  max-width: 1280px;
   height: 980px;
   margin: 0 auto;
   display: flex;
@@ -99,6 +113,7 @@ body{
 /* Box */
 
 .containerBoxInfoSize{
+  width: 100%;
   margin-left: 128px;
   padding-top: 26px;
 }
@@ -113,10 +128,6 @@ body{
   height: 86px;
 }
 
-.BoxIcon span{
-  color: #fff;
-}
-
 .BoxInfo{
   display: flex;
   flex-direction: row;
@@ -127,7 +138,7 @@ body{
 /* Second */
 
 .containerContentSecond{
-  width: 1280px;
+  max-width: 1280px;
   height: 980px;
   margin: 0 auto;
   display: flex;
@@ -157,6 +168,10 @@ body{
   padding-bottom: 32px;
 }
 
+.alignInfoPhone .phoneBackHidden{
+  display: none;
+}
+
 .background-purple{
   background: #462970;
   z-index: -10;
@@ -174,80 +189,13 @@ body{
   align-items: center;
 }
 
-/* Mobile */
-
-@media only screen and (max-width: 768px){
-  .containerBegin{
-    background: #462970;
-    width: 100%;
-  }
-  .containerBegin div img{
-    max-width: 600px;
-    overflow: hidden;
-    height: auto;
-  }
-  .finalPhoneContainer img{
-    max-width: 600px;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .mainImage{
-    margin-top: 96px; 
-  }
-
-  .containerTitle{
-    width: 90%;
-  }
-
-  .containerContent{
-    width: 768px;
-  }
-
-  .containerInfo div img{
-    max-width: 600px;
-    overflow: hidden;
-    height: auto;
-    margin-left: -200px;
-  }
-
-  .fontTitle{
-    font-size: 42px;
-  }
-
-  .fontInfo{
-    font-size: 36px;
-  }
-
-  .fontInfoAlt{
-    font-size: 36px;
-  }
-  
-  .containerBoxInfoSize{
-    margin-left: 20px;
-  }
-
-  /* second */
-  .containerContentSecond{
-    width: 768px;
-  }
-
-  .textBehind{
-    display: none;
-  }
-
-  .phoneBackBox{
-    max-width: 600px;
-    overflow: hidden;
-    height: auto;
-  }
-
-  .background-purple{
-    height: 320px;
-    margin-top: -320px;
-  }
-
-  .white{
-    color: #fff;
-  }
+.finalPhoneContainer {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
+
+.finalPhoneContainer img{
+  max-width: 100%;
+} 
